@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!----------------------------- META TAGS --------------------------------->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content=" html , css , javascript , bootstrap , mediaQuery">
+    <meta name="author" content="MULTI SHOP Mohamed E-commerce" >
+    <meta name="description" content="MULTI SHOP Mohamed E-commerce">
+    <!----------------------------- STYLE LINKS CSS && BOOTSTRAP && UIKIT --------------------------------->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="vendor/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/css/uikit.min.css"/>
+    <!----------------------------- FONT LINKS  --------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+    <!----------------------------- ICONS LINK && WEBSITE ICON  --------------------------------->
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="vendor/boxicons-2.1.4/css/boxicons.min.css">
+    <!----------------------------- SITE NAME  --------------------------------->
+    <title>MULTI SHOP Mohamed E-commerce</title>
+</head>
+<body style="background-color: var(--body-color);">
+        <!----------------------------- LOADER  --------------------------------->
+        <div class="loader-wrapper" id="loader-wrapper">
+            <div class="loading" id="loading"></div>
+        </div>
+        <!----------------------------- HEADER  --------------------------------->
+        <header class="navbar navbar-expand-lg bg-body-tertiary _header">
+            <div class="container-fluid container">
+                <a class="navbar-brand _logo" href="#">
+                    <span class="_logo_span_one" > MI </span> 
+                    <span class="_logo_span_two">SHOP</span>
+                </a>
+
+                    <form class="d-flex _search" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search for product" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit"><i class='bx bx-search-alt-2'></i></button>
+                    </form>
+
+                    <ul class="contact" >
+                        <li>Customer Service</li>
+                        <li class="num">+20 1018397060</li>
+                    </ul>
+
+            </div>
+        </header>
+        <!----------------------------- NAVBAR  --------------------------------->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary _navbar">
+            <div class="container-fluid container">
+
+                <div class="navbar-brand _categories" id="categories">
+                    <div class="_button_categories" id="_button_categories">
+                        <button class="_categories open_drop_down_categories">
+                            <i class='bx bx-menu' ></i>
+                            categories
+                            <i class='bx bxs-chevron-down right'></i>
+                        </button>
+                    </div>
+                    <ul class="drop_down_categories" id="drop_down_categories">
+                        <li class="open_drop_down_dresses">
+                            <button id="open_drop_down_dresses">Dresses</button>
+                            <i class='bx bx-chevron-right icon_right'></i>
+                            <ul class="drop_down_dresses" id="drop_down_dresses">
+                                <li><a href="#">men's dresses</a></li>
+                                <li><a href="#">woman's dresses</a></li>
+                                <li><a href="#">baby's dresses</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">shirts</a>
+                        </li>
+                        <li>
+                            <a href="#">jeans</a>
+                        </li>
+                        <li>
+                            <a href="#">swimwear</a>
+                        </li>
+                        <li>
+                            <a href="#">sleepwear</a>
+                        </li>
+                        <li>
+                            <a href="#">sportswear</a>
+                        </li>
+                        <li>
+                            <a href="#">jumpsuits</a>
+                        </li>
+                        <li>
+                            <a href="#">blazers</a>
+                        </li>
+                        <li>
+                            <a href="#">jackets</a>
+                        </li>
+                        <li>
+                            <a href="#">Shoes</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="navbar-collapse hidden_list">
+
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll site_sections" style="--bs-scroll-height: 100px;">
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="shop.html">shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="detail.html">shop detail</a>
+                            </li>
+                            <li class="nav-item open_pages">
+                                <a class="nav-link" aria-current="page" href="#">pages <i class='bx bxs-chevron-down'></i></a>
+                            </li>
+                            <li class="drop_down_pages">
+                                <ul> 
+                                    <li>
+                                        <a href="cart.html">shopping cart</a>
+                                    </li>
+                                    <li>
+                                        <a href="checkout.html">checkout</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="contact.html">contact</a>
+                            </li>
+                    </ul>
+
+                    <ul class="navbar-nav navbar-nav-scroll _navbar_icons" style="--bs-scroll-height: 100px;"> 
+                            <li class="nav-item open_log_pages" id="open_log_pages">
+                                <button class="nav-link open_log" id="open_log" aria-current="page" href="#">my account <i class='bx bxs-chevron-down'></i></button>
+                                <ul class="drop_down_log" id="drop_down_log"> 
+                                    <li>
+                                        <a href="register.html">sign up</a>
+                                    </li>
+                                    <li>
+                                        <a href="login.html">sign in</a>
+                                    </li>
+                                </ul>
+                            </li>   
+                            <li>
+                                <i class='bx bxs-heart' ></i>
+                                <span>0</span>
+                            </li>
+                            <li>
+                                <i class='bx bxs-cart-alt'></i>
+                                <span>0</span>
+                            </li>
+                    </ul>
+                </div>
+
+                <button class="open_hidden_list" id="open_hidden_list">
+                    <span class="navbar-toggler-icon"><i class='bx bx-menu' id="menu_icon"></i></span>
+                </button>
+            </div>
+        </nav>
+        <!----------------------------- hidden right list  --------------------------------->
+        <div class="hidden_list_relative">
+            <div class="hidden_list_open_md" id="hidden_list_open_md">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll site_sections_md">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="shop.html">shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="detail.html">shop detail</a>
+                    </li>
+                    <li class="nav-item open_pages_md">
+                        <button class="nav-link"  id="open_pages_md" aria-current="page" href="#">
+                            pages
+                        </button>
+                        <ul class="drop_down_pages_md" id="drop_down_pages_md"> 
+                            <li>
+                                <a href="cart.html">shopping cart</a>
+                            </li>
+                            <li>
+                                <a href="checkout.html">checkout</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="contact.html">contact</a>
+                    </li>
+                    <li class="nav-item open_log_pages_md" id="open_log_pages_md">
+                        <button class="nav-link open_log_md" id="open_log_md" aria-current="page" href="#">
+                            my account 
+                        </button>
+                        <ul class="drop_down_log_md" id="drop_down_log_md"> 
+                            <li>
+                                <a href="register.html">sign up</a>
+                            </li>
+                            <li>
+                                <a href="login.html">sign in</a>
+                            </li>
+                        </ul>
+                    </li>  
+                    <li>
+                        <a href="#">my featured</a>
+                    </li>
+                    <li>
+                        <a href="cart.html">my cart</a>
+                    </li>
+                </ul>
+        </div>
+        </div>
+        <!----------------------------- SCROLL TO TOP --------------------------------->
+        <button class="scroll_top" id="scroll_top">
+            <i class='bx bxs-chevrons-up'></i>
+        </button>
+        <!----------------------------- Detail --------------------------------->
+        <section class="detail_section">
+            <div class="contianer">
+                <div class="content">
+                    <div class="top_content">
+                        <div class="row">
+                            <div class="imgs_product col-lg-4 col-md-12 col-sm-12">
+                            </div>
+                            <div class="info_product col-lg-8 col-md-12 col-sm-12">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom_content">
+                        <div class="row">
+                            <div class="des_product col-lg-12">
+                                <div class="more_info">
+                                    <div class="content">
+                                        <div class="btns_view">
+                                            <button id="show_description"> description </button>
+                                            <button id="show_information"> information </button>
+                                            <button id="show_review"> reviews (1) </button>
+                                        </div>
+                                        <div class="more_info_content">
+                                            <div class="description_place" id="show_description_place">
+                                                <p class="title">
+                                                    Product Description
+                                                </p>
+                                                <P class="description">
+                                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto facilis sequi dolorem laboriosam pariatur magnam, possimus esse vitae minus ex, qui debitis nihil molestias porro, exercitationem repellendus suscipit maxime nam Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint consequuntur perferendis repudiandae, maxime sunt tempore odit consequatur modi repellat dolores nostrum esse delectus, natus ab enim eligendi. Cum, autem nisi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda architecto perspiciatis, porro ipsa dolore facilis suscipit doloribus quas sit rem corporis dolores neque provident a blanditiis delectus ratione iure vitae.
+                                                </P>
+                                            </div>
+                                            <div class="information_place" id="show_information_place">
+                                                <p class="title">
+                                                    Additional Information
+                                                </p>
+                                                <p class="information">
+                                                    Eos no lorem eirmod diam diam, eos elitr et gubergren diam sea. Consetetur vero aliquyam invidunt duo dolores et duo sit. Vero diam ea vero et dolore rebum, dolor rebum eirmod consetetur invidunt sed sed et, lorem duo et eos elitr, sadipscing kasd ipsum rebum diam. Dolore diam stet rebum sed tempor kasd eirmod. Takimata kasd ipsum accusam sadipscing, eos dolores sit no ut diam consetetur duo justo est, sit sanctus diam tempor aliquyam eirmod nonumy rebum dolor accusam, ipsum kasd eos consetetur at sit rebum, diam kasd invidunt tempor lorem, ipsum lorem elitr sanctus eirmod takimata dolor ea invidu
+                                                </p>
+                                                <div class="lists row">
+                                                    <ul class="info_list col-6">
+                                                        <li>Sit erat duo lorem duo ea consetetur, et eirmod takimata</li>
+                                                        <li>Sit erat duo lorem duo ea consetetur, et eirmod takimata</li>
+                                                        <li>Sit erat duo lorem duo ea consetetur, et eirmod takimata</li>
+                                                        <li>Sit erat duo lorem duo ea consetetur, et eirmod takimata</li>
+                                                    </ul>
+                                                    <ul class="info_list col-6">
+                                                        <li>Sit erat duo lorem duo ea consetetur, et eirmod takimata</li>
+                                                        <li>Sit erat duo lorem duo ea consetetur, et eirmod takimata</li>
+                                                        <li>Sit erat duo lorem duo ea consetetur, et eirmod takimata</li>
+                                                        <li>Sit erat duo lorem duo ea consetetur, et eirmod takimata</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="review_place" id="show_review_place">
+                                                <div class="review_place_conetnt row">
+                                                    <div class="review col-lg-6 col-md-12 col-sm-12 ">
+                                                        <p class="title">
+                                                            1 review for "Product Name"
+                                                        </p>
+                                                        <div class="review_card">
+                                                            <div class="img_user">
+                                                                <img src="images/user.jpg">
+                                                            </div>
+                                                            <div class="info_user">
+                                                                <p class="user_name_date">
+                                                                    mohamed ibrahim
+                                                                    <span>- 01 Jan 2023</span>
+                                                                </p>
+                                                                <ul class="review_star">
+                                                                    <li><i class='bx bxs-star'></i></li>
+                                                                    <li><i class='bx bxs-star'></i></li>
+                                                                    <li> <i class='bx bxs-star'></i></li>
+                                                                    <li><i class='bx bxs-star-half' ></i></li>
+                                                                    <li><i class='bx bx-star'></i></li>
+                                                                </ul>
+                                                                <p class="review_description">
+                                                                    Diam amet duo labore stet elitr ea clita ipsum, tempor labore accusam ipsum et no at. Kasd diam tempor rebum magna dolores sed sed eirmod ipsum.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="leave_review col-lg-6 col-md-12 col-sm-12">
+                                                        <p class="title">
+                                                            Leave a review
+                                                        </p>
+                                                        <p class="note">
+                                                            Your email address will not be published. Required fields are marked
+                                                        </p>
+                                                        <form>
+                                                            <ul class="your_rating">
+                                                                <li> your rating :  </li>
+                                                                <li> <i class='bx bx-star star'></i></li>
+                                                                <li> <i class='bx bx-star star'></i></li>
+                                                                <li> <i class='bx bx-star star'></i></li>
+                                                                <li> <i class='bx bx-star star'></i></li>
+                                                                <li> <i class='bx bx-star star'></i></li>
+                                                            </ul>
+
+                                                            <label for="review">Your review : </label>
+                                                            <textarea name="review" id="review"></textarea>
+
+                                                            <label for="name">Your Name :</label>
+                                                            <input type="text" name="name" id="name">
+
+                                                            <label for="email">your email :</label>
+                                                            <input type="email" id="email" name="email">
+
+                                                            <button type="submit">leave your review </button>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+                
+        <!----------------------------- FOOTER --------------------------------->
+        <section class="footer">
+            <div class="contianer">
+                <div class="footer_content">
+                    <div class="top_content">
+                        <div class="content row">
+                            <div class="footer_info col-lg-3 col-md-6 col-sm-12 mb-md-5 mb-sm-5">
+                                <p class="title">
+                                    GET IN TOUCH
+                                </p>
+                                <p class="des">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, nulla vel ipsum deserunt voluptatibus culpa eum ab quisquam praesentium quo iste quidem molestiae assumenda harum
+                                </p>
+                                <ul class="contact_info">
+                                    <li>
+                                        <i class='bx bx-map'></i>
+                                        EGYPT , Sharqia Governorate, Al-Ibrahimiyya City
+                                    </li>
+                                    <li>
+                                        <i class='bx bxs-envelope' ></i>
+                                        mhmdibrhm479@gmail.com
+                                    </li>
+                                    <li>
+                                        <i class='bx bxs-phone'></i>
+                                        +20 1018397060
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer_list_shop col-lg-3 col-md-6 col-sm-12 mb-md-5 mb-sm-5">
+                                <p class="title">
+                                    QUICK SHOP
+                                </p>
+                                <ul class="quick_shop_list">
+                                    <li>
+                                        <i class='bx bx-chevron-right'></i>
+                                        <a href="#">home</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-chevron-right'></i>
+                                        <a href="#">our shop</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-chevron-right'></i>
+                                        <a href="#">shop detail</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-chevron-right'></i>
+                                        <a href="#">shopping cart</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-chevron-right'></i>
+                                        <a href="#">checkout</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-chevron-right'></i>
+                                        <a href="#">contact us  </a>
+                                    </li>
+                                </ul>
+                            </div>  
+                            <div class="footer_list_account col-lg-3 col-md-6 col-sm-12 mb-md-5 mb-sm-5">
+                                <p class="title">
+                                    MY ACCOUNT
+                                </p>
+                                <ul class="my_account_list">
+                                    <li>
+                                        <i class='bx bx-chevron-right'></i>
+                                        <a href="#">home</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-chevron-right'></i>
+                                        <a href="#">our shop</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-chevron-right'></i>
+                                        <a href="#">shop detail</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-chevron-right'></i>
+                                        <a href="#">shopping cart</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-chevron-right'></i>
+                                        <a href="#">checkout</a>
+                                    </li>
+                                    <li>
+                                        <i class='bx bx-chevron-right'></i>
+                                        <a href="#">contact us  </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer_newsletter col-lg-3 col-md-6 col-sm-12 mb-md-5 mb-sm-5">
+                                <p class="title">
+                                    NEWSLETTER
+                                </p>
+                                <p class="des">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates repudiandae 
+                                </p>
+                                <form action="#" class="send_email">
+                                    <input type="email" name="email" id="email" placeholder="Your email address">
+                                    <button type="submit">sign up</button>
+                                </form>
+                                <p class="title">
+                                    follow us
+                                </p>
+                                <ul class="social_paggs">
+                                    <li>
+                                        <a href="#"><i class='bx bxl-facebook'></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class='bx bxl-instagram' ></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class='bx bxl-twitter' ></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buttom_content">
+                        <div class="content">
+                            <p class="end_title">
+                                @ thats all. thank you for your caring . <span> mohamed ibrahim</span> was with you.
+                            </p>
+                            <img src="images/payments.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!----------------------------- JS LINK && BOOTSTRAP JS LINK  && UIKIT --------------------------------->
+    <script src="js/main.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/detail.js"></script>
+    <script src="vendor/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit-icons.min.js"></script>
+</body>
+</html>

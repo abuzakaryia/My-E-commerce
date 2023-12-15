@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!----------------------------- META TAGS --------------------------------->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content=" html , css , javascript , bootstrap , mediaQuery">
+    <meta name="author" content="MULTI SHOP Mohamed E-commerce" >
+    <meta name="description" content="MULTI SHOP Mohamed E-commerce">
+    <!----------------------------- STYLE LINKS CSS && BOOTSTRAP && UIKIT --------------------------------->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="vendor/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/css/uikit.min.css"/>
+    <!----------------------------- FONT LINKS  --------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+    <!----------------------------- ICONS LINK && WEBSITE ICON  --------------------------------->
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="vendor/boxicons-2.1.4/css/boxicons.min.css">
+    <!----------------------------- SITE NAME  --------------------------------->
+    <title>MULTI SHOP Mohamed E-commerce</title>
+</head>
+<body style="background-color: var(--body-color);">
+        <!----------------------------- LOADER  --------------------------------->
+        <div class="loader-wrapper" id="loader-wrapper">
+            <div class="loading" id="loading"></div>
+        </div>
+        <!----------------------------- HEADER  --------------------------------->
+        <header class="navbar navbar-expand-lg bg-body-tertiary _header">
+            <div class="container-fluid container">
+                <a class="navbar-brand _logo" href="#">
+                    <span class="_logo_span_one" > MI </span> 
+                    <span class="_logo_span_two">SHOP</span>
+                </a>
+
+                    <form class="d-flex _search" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search for product" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit"><i class='bx bx-search-alt-2'></i></button>
+                    </form>
+
+                    <ul class="contact" >
+                        <li>Customer Service</li>
+                        <li class="num">+20 1018397060</li>
+                    </ul>
+
+            </div>
+        </header>
+        <!----------------------------- NAVBAR  --------------------------------->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary _navbar">
+            <div class="container-fluid container">
+
+                <div class="navbar-brand _categories" id="categories">
+                    <div class="_button_categories" id="_button_categories">
+                        <button class="_categories open_drop_down_categories">
+                            <i class='bx bx-menu' ></i>
+                            categories
+                            <i class='bx bxs-chevron-down right'></i>
+                        </button>
+                    </div>
+                    <ul class="drop_down_categories" id="drop_down_categories">
+                        <li class="open_drop_down_dresses">
+                            <button id="open_drop_down_dresses">Dresses</button>
+                            <i class='bx bx-chevron-right icon_right'></i>
+                            <ul class="drop_down_dresses" id="drop_down_dresses">
+                                <li><a href="#">men's dresses</a></li>
+                                <li><a href="#">woman's dresses</a></li>
+                                <li><a href="#">baby's dresses</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">shirts</a>
+                        </li>
+                        <li>
+                            <a href="#">jeans</a>
+                        </li>
+                        <li>
+                            <a href="#">swimwear</a>
+                        </li>
+                        <li>
+                            <a href="#">sleepwear</a>
+                        </li>
+                        <li>
+                            <a href="#">sportswear</a>
+                        </li>
+                        <li>
+                            <a href="#">jumpsuits</a>
+                        </li>
+                        <li>
+                            <a href="#">blazers</a>
+                        </li>
+                        <li>
+                            <a href="#">jackets</a>
+                        </li>
+                        <li>
+                            <a href="#">Shoes</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="navbar-collapse hidden_list">
+
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll site_sections" style="--bs-scroll-height: 100px;">
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="shop.html">shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="detail.html">shop detail</a>
+                            </li>
+                            <li class="nav-item open_pages">
+                                <a class="nav-link" aria-current="page" href="#">pages <i class='bx bxs-chevron-down'></i></a>
+                            </li>
+                            <li class="drop_down_pages">
+                                <ul> 
+                                    <li>
+                                        <a href="cart.html">shopping cart</a>
+                                    </li>
+                                    <li>
+                                        <a href="checkout.html">checkout</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="contact.html">contact</a>
+                            </li>
+                    </ul>
+
+                    <ul class="navbar-nav navbar-nav-scroll _navbar_icons" style="--bs-scroll-height: 100px;"> 
+                            <li class="nav-item open_log_pages" id="open_log_pages">
+                                <button class="nav-link open_log" id="open_log" aria-current="page" href="#">my account <i class='bx bxs-chevron-down'></i></button>
+                                <ul class="drop_down_log" id="drop_down_log"> 
+                                    <li>
+                                        <a href="register.html">sign up</a>
+                                    </li>
+                                    <li>
+                                        <a href="login.html">sign in</a>
+                                    </li>
+                                </ul>
+                            </li>   
+                            <li>
+                                <i class='bx bxs-heart' ></i>
+                                <span>0</span>
+                            </li>
+                            <li>
+                                <i class='bx bxs-cart-alt'></i>
+                                <span>0</span>
+                            </li>
+                    </ul>
+                </div>
+
+                <button class="open_hidden_list" id="open_hidden_list">
+                    <span class="navbar-toggler-icon"><i class='bx bx-menu' id="menu_icon"></i></span>
+                </button>
+            </div>
+        </nav>
+        <!----------------------------- hidden right list  --------------------------------->
+        <div class="hidden_list_relative">
+            <div class="hidden_list_open_md" id="hidden_list_open_md">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll site_sections_md">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="shop.html">shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="detail.html">shop detail</a>
+                    </li>
+                    <li class="nav-item open_pages_md">
+                        <button class="nav-link"  id="open_pages_md" aria-current="page" href="#">
+                            pages
+                        </button>
+                        <ul class="drop_down_pages_md" id="drop_down_pages_md"> 
+                            <li>
+                                <a href="cart.html">shopping cart</a>
+                            </li>
+                            <li>
+                                <a href="checkout.html">checkout</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="contact.html">contact</a>
+                    </li>
+                    <li class="nav-item open_log_pages_md" id="open_log_pages_md">
+                        <button class="nav-link open_log_md" id="open_log_md" aria-current="page" href="#">
+                            my account 
+                        </button>
+                        <ul class="drop_down_log_md" id="drop_down_log_md"> 
+                            <li>
+                                <a href="register.html">sign up</a>
+                            </li>
+                            <li>
+                                <a href="login.html">sign in</a>
+                            </li>
+                        </ul>
+                    </li>  
+                    <li>
+                        <a href="#">my featured</a>
+                    </li>
+                    <li>
+                        <a href="cart.html">my cart</a>
+                    </li>
+                </ul>
+        </div>
+        </div>
+        <!----------------------------- log in page now  --------------------------------->
+        <section class="register_page">
+            <form action="">
+                <p class="title">
+                    sign up now
+                </p>
+                <div class="input_content">
+                    <input type="text" name="name" id="name" placeholder="enter your name">
+                    <input type="tel" name="phone" id="phone" placeholder="enter your phone number">
+                </div>
+                <div class="input_content">
+                    <input type="email" name="email" id="email" placeholder="please enter your email">
+                    <input type="password" name="password" id="password" placeholder="please enter your password">
+                </div>
+                <div class="check">
+                    <p class="checkbox"><input type="checkbox"> remember me</p>
+                </div>
+                <div class="submit_button">
+                    <input type="submit" id="submit" value="sign up now">
+                </div>
+                <div class="login">
+                    <p>you have a account ? <a href="login.html">sing in now .</a></p>
+                </div>
+            </form>
+        </section>
+
+
+        <!----------------------------- FOOTER --------------------------------->
+        <section class="footer">
+                <div class="contianer">
+                    <div class="footer_content">
+                        <div class="top_content">
+                            <div class="content row">
+                                <div class="footer_info col-lg-3 col-md-6 col-sm-12 mb-md-5 mb-sm-5">
+                                    <p class="title">
+                                        GET IN TOUCH
+                                    </p>
+                                    <p class="des">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, nulla vel ipsum deserunt voluptatibus culpa eum ab quisquam praesentium quo iste quidem molestiae assumenda harum
+                                    </p>
+                                    <ul class="contact_info">
+                                        <li>
+                                            <i class='bx bx-map'></i>
+                                            EGYPT , Sharqia Governorate, Al-Ibrahimiyya City
+                                        </li>
+                                        <li>
+                                            <i class='bx bxs-envelope' ></i>
+                                            mhmdibrhm479@gmail.com
+                                        </li>
+                                        <li>
+                                            <i class='bx bxs-phone'></i>
+                                            +20 1018397060
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="footer_list_shop col-lg-3 col-md-6 col-sm-12 mb-md-5 mb-sm-5">
+                                    <p class="title">
+                                        QUICK SHOP
+                                    </p>
+                                    <ul class="quick_shop_list">
+                                        <li>
+                                            <i class='bx bx-chevron-right'></i>
+                                            <a href="#">home</a>
+                                        </li>
+                                        <li>
+                                            <i class='bx bx-chevron-right'></i>
+                                            <a href="#">our shop</a>
+                                        </li>
+                                        <li>
+                                            <i class='bx bx-chevron-right'></i>
+                                            <a href="#">shop detail</a>
+                                        </li>
+                                        <li>
+                                            <i class='bx bx-chevron-right'></i>
+                                            <a href="#">shopping cart</a>
+                                        </li>
+                                        <li>
+                                            <i class='bx bx-chevron-right'></i>
+                                            <a href="#">checkout</a>
+                                        </li>
+                                        <li>
+                                            <i class='bx bx-chevron-right'></i>
+                                            <a href="#">contact us  </a>
+                                        </li>
+                                    </ul>
+                                </div>  
+                                <div class="footer_list_account col-lg-3 col-md-6 col-sm-12 mb-md-5 mb-sm-5">
+                                    <p class="title">
+                                        MY ACCOUNT
+                                    </p>
+                                    <ul class="my_account_list">
+                                        <li>
+                                            <i class='bx bx-chevron-right'></i>
+                                            <a href="#">home</a>
+                                        </li>
+                                        <li>
+                                            <i class='bx bx-chevron-right'></i>
+                                            <a href="#">our shop</a>
+                                        </li>
+                                        <li>
+                                            <i class='bx bx-chevron-right'></i>
+                                            <a href="#">shop detail</a>
+                                        </li>
+                                        <li>
+                                            <i class='bx bx-chevron-right'></i>
+                                            <a href="#">shopping cart</a>
+                                        </li>
+                                        <li>
+                                            <i class='bx bx-chevron-right'></i>
+                                            <a href="#">checkout</a>
+                                        </li>
+                                        <li>
+                                            <i class='bx bx-chevron-right'></i>
+                                            <a href="#">contact us  </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="footer_newsletter col-lg-3 col-md-6 col-sm-12 mb-md-5 mb-sm-5">
+                                    <p class="title">
+                                        NEWSLETTER
+                                    </p>
+                                    <p class="des">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates repudiandae 
+                                    </p>
+                                    <form action="#" class="send_email">
+                                        <input type="email" name="email" id="email" placeholder="Your email address">
+                                        <button type="submit">sign up</button>
+                                    </form>
+                                    <p class="title">
+                                        follow us
+                                    </p>
+                                    <ul class="social_paggs">
+                                        <li>
+                                            <a href="#"><i class='bx bxl-facebook'></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class='bx bxl-instagram' ></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class='bx bxl-twitter' ></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttom_content">
+                            <div class="content">
+                                <p class="end_title">
+                                    @ thats all. thank you for your caring . <span> mohamed ibrahim</span> was with you.
+                                </p>
+                                <img src="images/payments.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!----------------------------- JS LINK && BOOTSTRAP JS LINK  && UIKIT --------------------------------->
+        <script src="js/main.js"></script>
+        <script src="vendor/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit-icons.min.js"></script>
+</body>
+</html>
